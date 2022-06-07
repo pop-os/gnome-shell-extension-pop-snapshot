@@ -1,0 +1,7 @@
+{
+	"name": "Pop!_OS Snapshot Notification",
+	"description": "Notifies the user when they should reboot the system after a snapshot has been restored",
+	"uuid": "pop-snapshot-notif@system76.com",
+	"shell-version": ["3.36", "3.38", "40", "41", "42"],
+	"url": "https://github.com/pop-os/gnome-shell-extension-pop-snapshot"
+}

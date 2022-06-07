@@ -1,0 +1,15 @@
+{
+	"name": "gnome-shell-extension-pop-snapshot",
+	"version": "0.1.0",
+	"description": "A simple GNOME Shell extension for notifying the user when a snapshot is restored",
+	"license": "MIT",
+	"files": [
+		"lib/**/*"
+	],
+	"devDependencies": {
+		"eslint": "^7.25.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"prettier": "^2.2.1"
+	}
+}
