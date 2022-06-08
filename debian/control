@@ -1,0 +1,18 @@
+Source: gnome-shell-extension-pop-snapshot
+Section: gnome
+Priority: optional
+Maintainer: Lucy <lucy@system76.com>
+Build-Depends: debhelper-compat (= 13), just
+Standards-Version: 4.6.0
+Homepage: https://github.com/pop-os/gnome-shell-extension-pop-snapshot
+Vcs-Browser: https://github.com/pop-os/gnome-shell-extension-pop-snapshot
+Vcs-Git: https://github.com/pop-os/gnome-shell-extension-pop-snapshot.git
+
+Package: gnome-shell-extension-pop-snapshot
+Architecture: all
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends}, 
+         gnome-shell (>= 40),
+         pop-snapshot
+Description: A simple extension that listens on the pop-snapshot D-Bus interface
+ and notifies the user that they should reboot after a snapshot is restored.

@@ -1,0 +1,4 @@
+tar-ignore = "node_modules"
+tar-ignore = ".git"
+tar-ignore = ".gitignore"
+tar-ignore = ".pnpm-debug.log"

@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+DESTDIR = debian/pop-snapshot-notif@system76.com
+CLEAN ?= 1
+
+%:
+	dh $@
+
+override_dh_shlibdeps:
+	dh_shlibdeps --dpkg-shlibdeps-params=--ignore-missing-info
+
+override_dh_auto_clean:
+	if test "${CLEAN}" = "1"; then \
+		just clean; \
+	fi
+
+override_dh_auto_build:
+	just rootdir=$(DESTDIR)
+
+override_dh_auto_install:
+	just rootdir=$(DESTDIR) install
