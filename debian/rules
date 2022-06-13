@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-DESTDIR = debian/pop-snapshot-notif@system76.com
+DESTDIR = debian/gnome-shell-extension-pop-snapshot
 CLEAN ?= 1
 
 %:

@@ -3,14 +3,10 @@ prefix := rootdir +  '/usr/share'
 gnomeextdir := prefix + '/gnome-shell/extensions'
 uuid := 'pop-snapshot-notif@system76.com'
 
-all:
-	mkdir build
-	cp src/extension.js build/extension.js
-	cp metadata.json build/metadata.json
-
 # Installs files onto the system
 install:
-	install -dm0644 build {{gnomeextdir}}/{{uuid}}
+	install -Dm0644 src/extension.js {{gnomeextdir}}/{{uuid}}/extension.js
+	install -Dm0644 metadata.json {{gnomeextdir}}/{{uuid}}/metadata.json
 
 # Uninstalls files from the system
 uninstall:
